@@ -44,15 +44,21 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <div className="hero-atmosphere" aria-hidden="true" />
-        <div className="eyebrow">A premium, online-first action RPG</div>
-        <h1>A world worth<br />returning to.</h1>
-        <p className="hero-copy">
-          Fast, loot-driven combat. Intentional cooperation. Authored dark-fantasy dungeons.
-          A persistent world where everything that matters comes from playing within it.
-        </p>
-        <a className="text-link" href="#vision">Read the vision <span aria-hidden="true">↓</span></a>
-        <div className="hero-rule" aria-hidden="true"><span /></div>
+        <h1 className="sr-only">Witherfate — A World Worth Returning To</h1>
+        <div className="hero-art">
+          <img
+            src="/og.png"
+            alt="Witherfate — A World Worth Returning To. An ancient stone arch opens onto an ember-lit darkness."
+          />
+        </div>
+        <div className="hero-caption">
+          <div className="eyebrow">A premium, online-first action RPG</div>
+          <p className="hero-copy">
+            Fast, loot-driven combat. Intentional cooperation. Authored dark-fantasy dungeons.
+            A persistent world where everything that matters comes from playing within it.
+          </p>
+          <a className="text-link" href="#vision">Read the vision <span aria-hidden="true">↓</span></a>
+        </div>
       </section>
 
       <section className="manifesto" id="vision">
