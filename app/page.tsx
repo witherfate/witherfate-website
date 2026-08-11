@@ -3,22 +3,22 @@ import { Ban, Castle, Handshake, Hourglass, Shield, Sword } from "lucide-react";
 const principles = [
   {
     icon: Shield,
-    title: "Meaning stays inside the world",
+    title: "In-world rewards only",
     copy: "Power, wealth, status, and appearance are earned through combat, exploration, craft, trade, and genuine companionship—never purchased from a storefront.",
   },
   {
     icon: Hourglass,
-    title: "Progress remembers you",
+    title: "Persistent characters and progression",
     copy: "Characters, equipment, relationships, and accomplishments persist. Persistence preserves your history—not permanent dominance: new content can reshape the meta and move yesterday’s pinnacle gear out of the spotlight.",
   },
   {
     icon: Handshake,
-    title: "Company is chosen",
+    title: "Solo play and intentional co-op",
     copy: "Adventure alone in a quiet, coherent world or deliberately invite companions. Cooperation is central; exposure to strangers is not compulsory.",
   },
   {
     icon: Castle,
-    title: "Every place has a history",
+    title: "Authored locations in a coherent world",
     copy: "Towns, wilderness, factions, enemies, and dungeons belong to one authored setting. The world is more than a menu of repeatable activities.",
   },
 ];
@@ -75,11 +75,11 @@ export default function Home() {
       </section>
 
       <section className="manifesto" id="vision">
-        <div className="section-label">The promise</div>
+        <div className="section-label">Core design</div>
         <div className="manifesto-detail">
           <div className="manifesto-copy">
             <p className="lead">
-              Witherfate is designed as an alternative to the machinery surrounding modern online games.
+              A premium action RPG designed to protect game integrity and maximize player immersion.
             </p>
             <p>
               There are no microtransactions, cosmetic storefronts, premium currencies, battle passes,
@@ -105,8 +105,8 @@ export default function Home() {
 
       <section className="principles-section" aria-labelledby="principles-title">
         <div className="section-intro">
-          <div className="section-label">Four foundations</div>
-          <h2 id="principles-title">Protecting integrity.<br />Deepening immersion.</h2>
+          <div className="section-label">Design principles</div>
+          <h2 id="principles-title">Game integrity and player immersion.</h2>
         </div>
         <div className="principles-grid">
           {principles.map((principle) => {
@@ -128,8 +128,8 @@ export default function Home() {
 
       <section className="experience" id="experience">
         <div className="experience-heading">
-          <div className="section-label">The shape of play</div>
-          <h2>Connected adventures,<br />not isolated runs.</h2>
+          <div className="section-label">Core gameplay loop</div>
+          <h2>Persistent solo and cooperative dungeon adventures.</h2>
           <p>
             The core rhythm moves naturally between preparation, discovery, combat, reward,
             relationships, and a world that carries the consequences forward.
@@ -161,8 +161,8 @@ export default function Home() {
 
       <section className="world" id="world">
         <div className="world-copy">
-          <div className="section-label">Dungeons at the heart</div>
-          <h2>The world grows.<br />It does not reset.</h2>
+          <div className="section-label">Content and expansion model</div>
+          <h2>New dungeons expand the permanent world.</h2>
           <p>
             Major dungeons are Witherfate’s primary unit of storytelling and expansion. Each can
             introduce a place, enemy family, boss, mystery, item ecosystem, and lasting change to
@@ -196,8 +196,8 @@ export default function Home() {
 
       <section className="economy-section">
         <div className="economy-statement">
-          <div className="section-label">A free, protected economy</div>
-          <h2>Trade is gameplay.</h2>
+          <div className="section-label">Items and economy</div>
+          <h2>Free player trade in a protected economy.</h2>
         </div>
         <div className="economy-detail">
           <figure className="section-art">
@@ -227,8 +227,8 @@ export default function Home() {
 
       <section className="anti-patterns" aria-labelledby="exclusions-title">
         <div className="anti-heading">
-          <div className="section-label">Explicitly absent by design</div>
-          <h2 id="exclusions-title">No storefront.<br />No reset. No pressure.</h2>
+          <div className="section-label">Excluded systems</div>
+          <h2 id="exclusions-title">No microtransactions, battle passes, or seasonal resets.</h2>
           <p>
             These are not missing features or future plans. Witherfate deliberately rejects the
             systems that turn play into a purchase funnel, a deadline, or a disposable experience.
