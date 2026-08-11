@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://witherfate.com"),
   title: "Witherfate — A World Worth Returning To",
   description:
-    "A premium, online-first action RPG built around persistent accomplishment, intentional cooperation, and an authored dark-fantasy world.",
+    "A premium, server-authoritative action RPG built for intentional group play, persistent progression, and a world protected from real-world money.",
   openGraph: {
     title: "Witherfate — A World Worth Returning To",
     description:
-      "A persistent online world where everything that matters comes from playing within it.",
+      "A world protected from real-world money, seasonal resets, and the machinery that put monetization ahead of the game.",
     url: "https://witherfate.com",
     siteName: "Witherfate",
     type: "website",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Witherfate — A World Worth Returning To",
     description:
-      "A persistent online world where everything that matters comes from playing within it.",
+      "A world protected from real-world money, seasonal resets, and the machinery that put monetization ahead of the game.",
     images: ["/og.png"],
   },
 };
