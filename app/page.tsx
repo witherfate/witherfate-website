@@ -314,6 +314,24 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <figure className="class-study">
+          <img
+            src="/art-defiler-black-anatomy.webp"
+            width="1536"
+            height="1022"
+            loading="lazy"
+            decoding="async"
+            alt="The Defiler studies a shrouded corrupted creature in an improvised plague-house laboratory beneath a ruined chapel."
+          />
+          <figcaption>
+            <span>Black Anatomy</span>
+            <p>
+              Defilers study how supernatural corruption changes living matter. The work is
+              forbidden, methodical, and personally dangerous—but understanding the corruption is
+              the first step toward containing it or forcing it to serve the group.
+            </p>
+          </figcaption>
+        </figure>
       </section>
 
       <section className="world" id="world">
