@@ -1,4 +1,4 @@
-import { Castle, Handshake, Hourglass, Shield } from "lucide-react";
+import { Castle, Gem, Handshake, Hourglass, Shield } from "lucide-react";
 
 const principles = [
   {
@@ -138,7 +138,9 @@ export default function Home() {
           <ol className="journey-list">
             {journey.map(([title, copy]) => (
               <li key={title}>
-                <span className="journey-marker" aria-hidden="true">❧</span>
+                <span className="journey-marker" aria-hidden="true">
+                  <Gem strokeWidth={1.3} />
+                </span>
                 <div><h3>{title}</h3><p>{copy}</p></div>
               </li>
             ))}
