@@ -2,25 +2,21 @@ import { Castle, Handshake, Hourglass, Shield } from "lucide-react";
 
 const principles = [
   {
-    number: "01",
     icon: Shield,
     title: "Meaning stays inside the world",
     copy: "Power, wealth, status, and appearance are earned through combat, exploration, craft, trade, and genuine companionship—never purchased from a storefront.",
   },
   {
-    number: "02",
     icon: Hourglass,
     title: "Progress remembers you",
     copy: "Characters, equipment, relationships, and accomplishments persist. New releases add possibilities without declaring that yesterday’s effort has expired.",
   },
   {
-    number: "03",
     icon: Handshake,
     title: "Company is chosen",
     copy: "Adventure alone in a quiet, coherent world or deliberately invite companions. Cooperation is central; exposure to strangers is not compulsory.",
   },
   {
-    number: "04",
     icon: Castle,
     title: "Every place has a history",
     copy: "Towns, wilderness, factions, enemies, and dungeons belong to one authored setting. The world is more than a menu of repeatable activities.",
@@ -82,6 +78,16 @@ export default function Home() {
             “Everything of value has an in-world history—and everything worth earning remains meaningful when you return.”
           </blockquote>
         </div>
+        <figure className="section-art manifesto-art">
+          <img
+            src="/art-reliquary.webp"
+            width="1600"
+            height="841"
+            loading="lazy"
+            decoding="async"
+            alt="A weathered sword and shield rest against an ancient stone reliquary lit by embers."
+          />
+        </figure>
       </section>
 
       <section className="principles-section" aria-labelledby="principles-title">
@@ -93,12 +99,11 @@ export default function Home() {
           {principles.map((principle) => {
             const Icon = principle.icon;
             return (
-              <article className="principle" key={principle.number}>
+              <article className="principle" key={principle.title}>
                 <div className="principle-heading">
                   <div className="principle-icon" aria-hidden="true">
                     <Icon strokeWidth={1.25} />
                   </div>
-                  <div className="principle-number">{principle.number}</div>
                 </div>
                 <h3>{principle.title}</h3>
                 <p>{principle.copy}</p>
@@ -117,14 +122,26 @@ export default function Home() {
             relationships, and a world that carries the consequences forward.
           </p>
         </div>
-        <ol className="journey-list">
-          {journey.map(([title, copy], index) => (
-            <li key={title}>
-              <span className="journey-index">{String(index + 1).padStart(2, "0")}</span>
-              <div><h3>{title}</h3><p>{copy}</p></div>
-            </li>
-          ))}
-        </ol>
+        <div className="experience-detail">
+          <figure className="section-art">
+            <img
+              src="/art-expedition.webp"
+              width="1600"
+              height="841"
+              loading="lazy"
+              decoding="async"
+              alt="Three cloaked adventurers follow a stone road toward a distant ruined fortress."
+            />
+          </figure>
+          <ol className="journey-list">
+            {journey.map(([title, copy]) => (
+              <li key={title}>
+                <span className="journey-marker" aria-hidden="true">❧</span>
+                <div><h3>{title}</h3><p>{copy}</p></div>
+              </li>
+            ))}
+          </ol>
+        </div>
       </section>
 
       <section className="world" id="world">
@@ -141,12 +158,24 @@ export default function Home() {
             players already earned or making them regret when they arrived.
           </p>
         </div>
-        <div className="world-diagram" aria-label="Permanent expansion model">
-          <div><span>Base world</span><small>Characters · towns · wilderness</small></div>
-          <i aria-hidden="true" />
-          <div><span>New dungeon</span><small>Story · enemies · rewards</small></div>
-          <i aria-hidden="true" />
-          <div><span>Permanent consequence</span><small>More world · more possibility</small></div>
+        <div className="world-detail">
+          <figure className="section-art">
+            <img
+              src="/art-dungeon.webp"
+              width="1600"
+              height="841"
+              loading="lazy"
+              decoding="async"
+              alt="A vast ruined underground cathedral descends through ember-lit arches into darkness."
+            />
+          </figure>
+          <div className="world-diagram" aria-label="Permanent expansion model">
+            <div><span>Base world</span><small>Characters · towns · wilderness</small></div>
+            <i aria-hidden="true" />
+            <div><span>New dungeon</span><small>Story · enemies · rewards</small></div>
+            <i aria-hidden="true" />
+            <div><span>Permanent consequence</span><small>More world · more possibility</small></div>
+          </div>
         </div>
       </section>
 
@@ -155,16 +184,28 @@ export default function Home() {
           <div className="section-label">A free, protected economy</div>
           <h2>Trade is gameplay.</h2>
         </div>
-        <div className="economy-copy">
-          <p>
-            Rare equipment can be bought, sold, crafted, gifted, and valued by players. Traders and
-            crafters can build genuine expertise and wealth entirely through in-game activity.
-          </p>
-          <p>
-            The economy is defended from bots, commercial spam, and real-money trade without turning
-            every item into an account-bound object. Its permanence is managed through durable services,
-            commissions, crafting costs, and careful control of currency creation—not scheduled destruction.
-          </p>
+        <div className="economy-detail">
+          <figure className="section-art">
+            <img
+              src="/art-economy.webp"
+              width="1600"
+              height="841"
+              loading="lazy"
+              decoding="async"
+              alt="An austere merchant guild appraisal table holds scales, ledgers, ingots, coins, and a weathered gauntlet."
+            />
+          </figure>
+          <div className="economy-copy">
+            <p>
+              Rare equipment can be bought, sold, crafted, gifted, and valued by players. Traders and
+              crafters can build genuine expertise and wealth entirely through in-game activity.
+            </p>
+            <p>
+              The economy is defended from bots, commercial spam, and real-money trade without turning
+              every item into an account-bound object. Its permanence is managed through durable services,
+              commissions, crafting costs, and careful control of currency creation—not scheduled destruction.
+            </p>
+          </div>
         </div>
       </section>
 
