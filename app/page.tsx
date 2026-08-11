@@ -115,7 +115,7 @@ export default function Home() {
         <div className="industry-heading">
           <div className="section-label">The industry failed the game</div>
           <div className="industry-copy">
-            <h2 id="failure-title">The game industry put monetization ahead of gameplay and player experience.</h2>
+            <h2 id="failure-title">The game industry prioritized monetization at the cost of gameplay and player experience.</h2>
             <p>
               It built a repeating commercial loop: reset progress, manufacture urgency, bring
               players back, and sell them more. These systems are not harmless additions around

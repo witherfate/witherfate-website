@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Witherfate — A World Worth Returning To",
     description:
-      "A world protected from real-world money, seasonal resets, and the machinery that put monetization ahead of the game.",
+      "A world protected from real-world money, seasonal resets, and monetization systems built at the cost of the game.",
     url: "https://witherfate.com",
     siteName: "Witherfate",
     type: "website",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Witherfate — A World Worth Returning To",
     description:
-      "A world protected from real-world money, seasonal resets, and the machinery that put monetization ahead of the game.",
+      "A world protected from real-world money, seasonal resets, and monetization systems built at the cost of the game.",
     images: ["/og.png"],
   },
 };
