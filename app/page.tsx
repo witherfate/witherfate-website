@@ -89,6 +89,7 @@ export default function Home() {
           <a href="#failure">Industry</a>
           <a href="#vision">Principles</a>
           <a href="#experience">Gameplay</a>
+          <a href="#classes">Classes</a>
           <a href="#world">World</a>
         </nav>
       </header>
@@ -260,6 +261,58 @@ export default function Home() {
               manipulation substantially harder while keeping long-term progress protected.
             </p>
           </article>
+        </div>
+      </section>
+
+      <section className="classes-section" id="classes" aria-labelledby="defiler-title">
+        <figure className="class-art">
+          <img
+            src="/art-defiler.webp"
+            width="1024"
+            height="1538"
+            loading="lazy"
+            decoding="async"
+            alt="The Defiler, a scarred and exhausted ritual combatant carrying a hooked blade and a corruption-filled iron censer."
+          />
+        </figure>
+        <div className="class-copy">
+          <div className="section-label">Classes · First revealed</div>
+          <h2 id="defiler-title">The Defiler</h2>
+          <p className="class-lead">
+            A tormented ritual combatant who weaponizes corruption without escaping its cost.
+          </p>
+          <p>
+            The Defiler&apos;s current direction is a close-to-mid-range party enabler who weakens
+            enemies, contaminates the battlefield, and turns the remains of defeated creatures
+            into momentum for the group.
+          </p>
+          <p>
+            His abilities are effective because they are terrible. Every desecrated relic and
+            profane ritual leaves something behind in him. He continues not because he enjoys the
+            power, but because other people still depend on what it can do.
+          </p>
+          <div className="class-traits" aria-label="Defiler combat identity">
+            <span>Enemy disruption</span>
+            <span>Battlefield corruption</span>
+            <span>Party amplification</span>
+            <span>Attrition</span>
+          </div>
+          <div className="class-notes">
+            <div>
+              <h3>Group role</h3>
+              <p>
+                Degrade dangerous enemies, control hostile ground, and create openings that make
+                the entire party more effective.
+              </p>
+            </div>
+            <div>
+              <h3>Character fantasy</h3>
+              <p>
+                Use powers that visibly damage their wielder. The Defiler survives the corruption;
+                he is never untouched by it.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
