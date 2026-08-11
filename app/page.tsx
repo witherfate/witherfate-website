@@ -87,7 +87,7 @@ export default function Home() {
               inside, real-world money has no authority.
             </p>
             <blockquote>
-              “What you earn remains part of your history—even as new discoveries reshape what the world values.”
+              “What you earn remains part of your history—even as new discoveries reshape the world.”
             </blockquote>
           </div>
           <figure className="section-art manifesto-art">
