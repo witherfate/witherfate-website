@@ -1,4 +1,4 @@
-import { Castle, Gem, Handshake, Hourglass, Shield } from "lucide-react";
+import { Ban, Castle, Gem, Handshake, Hourglass, Shield } from "lucide-react";
 
 const principles = [
   {
@@ -29,6 +29,17 @@ const journey = [
   ["Venture", "Cross hostile wilderness and enter an authored dungeon with its own ecology, mystery, and dramatic arc."],
   ["Overcome", "Read threats, commit to actions, coordinate naturally, and master encounters through execution and understanding."],
   ["Return changed", "Carry home items, knowledge, wealth, and consequences that become part of your character’s continuing history."],
+];
+
+const exclusions = [
+  "No microtransactions",
+  "No paid cosmetics",
+  "No battle passes",
+  "No seasonal resets",
+  "No forced public hubs",
+  "No paid convenience",
+  "No disposable content",
+  "No storefront-driven clutter",
 ];
 
 export default function Home() {
@@ -213,17 +224,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="anti-patterns">
-        <div className="section-label">Designed without</div>
+      <section className="anti-patterns" aria-labelledby="exclusions-title">
+        <div className="anti-heading">
+          <div className="section-label">Explicitly absent by design</div>
+          <h2 id="exclusions-title">No storefront.<br />No reset. No pressure.</h2>
+          <p>
+            These are not missing features or future plans. Witherfate deliberately rejects the
+            systems that turn play into a purchase funnel, a deadline, or a disposable experience.
+          </p>
+        </div>
         <div className="anti-grid">
-          <span>Microtransactions</span>
-          <span>Paid cosmetics</span>
-          <span>Battle passes</span>
-          <span>Seasonal resets</span>
-          <span>Forced public hubs</span>
-          <span>Paid convenience</span>
-          <span>Disposable content</span>
-          <span>Visual storefront clutter</span>
+          {exclusions.map((item) => (
+            <div className="anti-item" key={item}>
+              <Ban aria-hidden="true" strokeWidth={1.4} />
+              <span>{item}</span>
+            </div>
+          ))}
         </div>
       </section>
 
