@@ -358,8 +358,6 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 25px
 
 @media (max-width: 560px) {
   .site-header { padding-top: 24px; }
-  .hero-art { overflow: hidden; }
-  .hero-art img { width: 150%; max-width: none; transform: translateX(-18%); }
   .failure-grid, .online-play-grid { grid-template-columns: 1fr; }
   .failure { min-height: auto; border-right: 0; border-bottom: 1px solid var(--line); }
   .failure:last-child { border-bottom: 0; }
