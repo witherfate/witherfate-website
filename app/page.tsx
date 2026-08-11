@@ -79,7 +79,8 @@ export default function Home() {
         <div className="manifesto-detail">
           <div className="manifesto-copy">
             <p className="lead">
-              A premium action RPG designed to protect game integrity and maximize player immersion.
+              Witherfate is a world protected from the real world—a premium action RPG designed
+              to preserve game integrity and maximize player immersion.
             </p>
             <p>
               There are no microtransactions, cosmetic storefronts, premium currencies, battle passes,
