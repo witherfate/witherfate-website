@@ -9,7 +9,7 @@ const principles = [
   {
     icon: Hourglass,
     title: "Progress remembers you",
-    copy: "Characters, equipment, relationships, and accomplishments persist. New releases add possibilities without declaring that yesterday’s effort has expired.",
+    copy: "Characters, equipment, relationships, and accomplishments persist. Persistence preserves your history—not permanent dominance: new content can reshape the meta and move yesterday’s pinnacle gear out of the spotlight.",
   },
   {
     icon: Handshake,
@@ -87,7 +87,7 @@ export default function Home() {
               inside, real-world money has no authority.
             </p>
             <blockquote>
-              “Everything of value has an in-world history—and everything worth earning remains meaningful when you return.”
+              “What you earn remains part of your history—even as new discoveries reshape what the world values.”
             </blockquote>
           </div>
           <figure className="section-art manifesto-art">
@@ -106,7 +106,7 @@ export default function Home() {
       <section className="principles-section" aria-labelledby="principles-title">
         <div className="section-intro">
           <div className="section-label">Four foundations</div>
-          <h2 id="principles-title">A design philosophy with consequences.</h2>
+          <h2 id="principles-title">Protecting integrity.<br />Deepening immersion.</h2>
         </div>
         <div className="principles-grid">
           {principles.map((principle) => {
@@ -217,8 +217,9 @@ export default function Home() {
             </p>
             <p>
               The economy is defended from bots, commercial spam, and real-money trade without turning
-              every item into an account-bound object. Its permanence is managed through durable services,
-              commissions, crafting costs, and careful control of currency creation—not scheduled destruction.
+              every item into an account-bound object. Its health is supported through durable services,
+              commissions, crafting costs, careful control of currency creation, and natural depreciation:
+              new discoveries and stronger gear can reshape the meta, moving former pinnacle items out of the spotlight.
             </p>
           </div>
         </div>
