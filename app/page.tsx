@@ -65,29 +65,31 @@ export default function Home() {
 
       <section className="manifesto" id="vision">
         <div className="section-label">The promise</div>
-        <div className="manifesto-copy">
-          <p className="lead">
-            Witherfate is designed as an alternative to the machinery surrounding modern online games.
-          </p>
-          <p>
-            There are no microtransactions, cosmetic storefronts, premium currencies, battle passes,
-            seasonal resets, or paid shortcuts. Players purchase the game and its expansions. Once
-            inside, real-world money has no authority.
-          </p>
-          <blockquote>
-            “Everything of value has an in-world history—and everything worth earning remains meaningful when you return.”
-          </blockquote>
+        <div className="manifesto-detail">
+          <div className="manifesto-copy">
+            <p className="lead">
+              Witherfate is designed as an alternative to the machinery surrounding modern online games.
+            </p>
+            <p>
+              There are no microtransactions, cosmetic storefronts, premium currencies, battle passes,
+              seasonal resets, or paid shortcuts. Players purchase the game and its expansions. Once
+              inside, real-world money has no authority.
+            </p>
+            <blockquote>
+              “Everything of value has an in-world history—and everything worth earning remains meaningful when you return.”
+            </blockquote>
+          </div>
+          <figure className="section-art manifesto-art">
+            <img
+              src="/art-reliquary.webp"
+              width="1600"
+              height="841"
+              loading="lazy"
+              decoding="async"
+              alt="A weathered sword and shield rest against an ancient stone reliquary lit by embers."
+            />
+          </figure>
         </div>
-        <figure className="section-art manifesto-art">
-          <img
-            src="/art-reliquary.webp"
-            width="1600"
-            height="841"
-            loading="lazy"
-            decoding="async"
-            alt="A weathered sword and shield rest against an ancient stone reliquary lit by embers."
-          />
-        </figure>
       </section>
 
       <section className="principles-section" aria-labelledby="principles-title">
