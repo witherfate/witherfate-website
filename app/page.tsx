@@ -1,21 +1,27 @@
+import { Castle, Handshake, Hourglass, Shield } from "lucide-react";
+
 const principles = [
   {
     number: "01",
+    icon: Shield,
     title: "Meaning stays inside the world",
     copy: "Power, wealth, status, and appearance are earned through combat, exploration, craft, trade, and genuine companionship—never purchased from a storefront.",
   },
   {
     number: "02",
+    icon: Hourglass,
     title: "Progress remembers you",
     copy: "Characters, equipment, relationships, and accomplishments persist. New releases add possibilities without declaring that yesterday’s effort has expired.",
   },
   {
     number: "03",
+    icon: Handshake,
     title: "Company is chosen",
     copy: "Adventure alone in a quiet, coherent world or deliberately invite companions. Cooperation is central; exposure to strangers is not compulsory.",
   },
   {
     number: "04",
+    icon: Castle,
     title: "Every place has a history",
     copy: "Towns, wilderness, factions, enemies, and dungeons belong to one authored setting. The world is more than a menu of repeatable activities.",
   },
@@ -84,13 +90,21 @@ export default function Home() {
           <h2 id="principles-title">A design philosophy with consequences.</h2>
         </div>
         <div className="principles-grid">
-          {principles.map((principle) => (
-            <article className="principle" key={principle.number}>
-              <div className="principle-number">{principle.number}</div>
-              <h3>{principle.title}</h3>
-              <p>{principle.copy}</p>
-            </article>
-          ))}
+          {principles.map((principle) => {
+            const Icon = principle.icon;
+            return (
+              <article className="principle" key={principle.number}>
+                <div className="principle-heading">
+                  <div className="principle-icon" aria-hidden="true">
+                    <Icon strokeWidth={1.25} />
+                  </div>
+                  <div className="principle-number">{principle.number}</div>
+                </div>
+                <h3>{principle.title}</h3>
+                <p>{principle.copy}</p>
+              </article>
+            );
+          })}
         </div>
       </section>
 

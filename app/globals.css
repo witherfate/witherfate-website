@@ -143,10 +143,37 @@ blockquote {
   letter-spacing: -.025em;
 }
 .principles-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.principle { min-height: 340px; padding: 34px clamp(22px, 2.4vw, 42px); border-right: 1px solid var(--line); }
+.principle {
+  min-height: 380px;
+  position: relative;
+  overflow: hidden;
+  padding: 34px clamp(22px, 2.4vw, 42px);
+  border-right: 1px solid var(--line);
+  background: radial-gradient(circle at 18% 16%, rgba(154, 76, 54, .045), transparent 28%);
+}
 .principle:last-child { border-right: 0; }
-.principle-number { color: var(--dim); font: 500 11px/1 var(--font-mono), monospace; }
-.principle h3 { margin: 78px 0 22px; font: 500 28px/1.1 var(--font-display), serif; }
+.principle-heading { display: flex; align-items: flex-start; justify-content: space-between; }
+.principle-icon {
+  width: 58px;
+  height: 58px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  color: #c4b8a8;
+  border-top: 1px solid rgba(199, 122, 81, .55);
+  border-left: 1px solid rgba(199, 122, 81, .55);
+}
+.principle-icon::before,
+.principle-icon::after {
+  content: "";
+  position: absolute;
+  background: rgba(98, 91, 82, .62);
+}
+.principle-icon::before { right: 0; top: 14px; width: 1px; height: 44px; }
+.principle-icon::after { left: 14px; bottom: 0; width: 44px; height: 1px; }
+.principle-icon svg { width: 31px; height: 31px; filter: drop-shadow(0 0 10px rgba(199, 122, 81, .1)); }
+.principle-number { padding-top: 4px; color: var(--dim); font: 500 11px/1 var(--font-mono), monospace; }
+.principle h3 { margin: 56px 0 22px; font: 500 28px/1.1 var(--font-display), serif; }
 .principle p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
 
 .experience { grid-template-columns: .9fr 1.1fr; }
