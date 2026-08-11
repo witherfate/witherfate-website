@@ -16,22 +16,22 @@ import {
 const industryFailures = [
   {
     icon: RefreshCcw,
-    title: "Progress became disposable",
-    copy: "Seasonal resets and temporary progression invalidate the player’s time so the engagement cycle can begin again.",
+    title: "Seasonal models made progress disposable",
+    copy: "Characters, economies, and accomplishments are wiped or invalidated so the engagement and sales cycle can begin again.",
   },
   {
     icon: ShoppingBag,
-    title: "Worlds became storefronts",
-    copy: "Cosmetic shops, premium currencies, and purchase prompts turn game worlds into interfaces for selling inventory.",
+    title: "Storefronts turned worlds into sales floors",
+    copy: "Paid cosmetics sever appearance from achievement while premium currencies and purchase prompts invade the world itself.",
   },
   {
     icon: CreditCard,
-    title: "Friction became a product",
+    title: "Paid convenience monetized bad design",
     copy: "Games manufacture inconvenience, then sell power, speed, access, or relief from problems the design created.",
   },
   {
     icon: Clock3,
-    title: "Play became obligation",
+    title: "Battle passes turned play into obligation",
     copy: "Battle passes, daily chores, and expiring rewards replace the desire to play with pressure not to miss out.",
   },
 ];
@@ -122,7 +122,13 @@ export default function Home() {
               the game. They shape its balance, pacing, art direction, social spaces, and respect
               for the player&apos;s time.
             </p>
-            <p className="industry-verdict">We are sick of it.</p>
+            <p>
+              None of it disappeared at once. A cosmetic shop seemed harmless. A battle pass seemed
+              optional. A seasonal reset looked like fresh content. Paid convenience looked like
+              choice. One compromise at a time, the industry took away earned status, coherent
+              worlds, freedom from deadlines, and trust that the game would put players first.
+            </p>
+            <p className="industry-verdict">Look at what they took from us.</p>
           </div>
         </div>
         <div className="failure-grid">
