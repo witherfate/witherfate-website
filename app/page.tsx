@@ -377,6 +377,22 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="class-skills" aria-labelledby="defiler-skills-title">
+          <div className="class-skills-heading">
+            <div className="section-label">Revealed skills</div>
+            <h3 id="defiler-skills-title">Defiler skills</h3>
+          </div>
+          <div className="skill-list">
+            <article className="skill-card">
+              <span>Wither · Area</span>
+              <h4>Blight</h4>
+              <p>
+                Contaminate an area with concentrated decay, dealing Wither damage over time and
+                making the ground increasingly dangerous to enemies that remain within it.
+              </p>
+            </article>
+          </div>
+        </div>
         <figure className="class-study">
           <img
             src="/art-defiler-black-anatomy.webp"
@@ -448,6 +464,49 @@ export default function Home() {
             alt="An elderly Sorcerer with iron-gray hair and beard conjures blue-white lightning in a candlelit library, the same charge visible in his eyes."
           />
         </figure>
+        <div className="class-skills sorcerer-skills" aria-labelledby="sorcerer-skills-title">
+          <div className="class-skills-heading">
+            <div className="section-label">Revealed skills</div>
+            <h3 id="sorcerer-skills-title">Sorcerer skills</h3>
+          </div>
+          <div className="skill-list">
+            <article className="skill-card">
+              <span>Mobility</span>
+              <h4>Teleport</h4>
+              <p>
+                Collapse the space at the Sorcerer&apos;s position and reappear instantly at a chosen
+                destination. Teleport crosses enemies and hazards, but disciplined use is essential
+                when the arrival point may be more dangerous than the place left behind.
+              </p>
+            </article>
+            <article className="skill-card">
+              <span>Cold · Area · Control</span>
+              <h4>Frost Nova</h4>
+              <p>
+                Release a ring of violent cold around the Sorcerer, damaging nearby enemies and
+                freezing the ground to arrest an advance.
+              </p>
+            </article>
+          </div>
+        </div>
+        <figure className="class-study sorcerer-study teleport-study">
+          <img
+            src="/art-sorcerer-teleport.webp"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+            alt="The Sorcerer arrives through compressed space in a moonlit cathedral as a small collapsing void marks the position he abandoned."
+          />
+          <figcaption>
+            <span>Teleport</span>
+            <p>
+              The origin collapses to a temporary void while displaced space ripples outward at
+              the destination. Nothing travels between the two points; the distance separating them
+              is briefly made irrelevant.
+            </p>
+          </figcaption>
+        </figure>
         <figure className="class-study sorcerer-study">
           <img
             src="/art-sorcerer-frost-nova.webp"
@@ -516,6 +575,22 @@ export default function Home() {
                 danger—she makes certain it never receives a fair chance.
               </p>
             </div>
+          </div>
+        </div>
+        <div className="class-skills rogue-skills" aria-labelledby="rogue-skills-title">
+          <div className="class-skills-heading">
+            <div className="section-label">Revealed skills</div>
+            <h3 id="rogue-skills-title">Rogue skills</h3>
+          </div>
+          <div className="skill-list">
+            <article className="skill-card">
+              <span>Physical / Wither · Bow</span>
+              <h4>Poison Arrow</h4>
+              <p>
+                Fire an arrow coated in concentrated poison. The impact deals Physical damage,
+                applies lingering Wither damage, and leaves a small toxic cloud around the target.
+              </p>
+            </article>
           </div>
         </div>
         <figure className="class-study rogue-study">

@@ -356,6 +356,30 @@ blockquote {
 .class-notes > div + div { padding-left: 28px; border-right: 0; }
 .class-notes h3 { margin: 0 0 12px; font: 500 24px/1.1 var(--font-display), serif; }
 .class-notes p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.class-skills {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(190px, .5fr) minmax(0, 1.5fr);
+  gap: clamp(32px, 7vw, 110px);
+  width: 100%;
+  padding: clamp(42px, 5vw, 70px) 0 0;
+  border-top: 1px solid var(--line);
+}
+.class-skills-heading h3 {
+  margin: 16px 0 0;
+  font: 500 clamp(32px, 3.5vw, 52px)/1 var(--font-display), serif;
+}
+.skill-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.skill-card { min-height: 235px; padding: 27px clamp(22px, 3vw, 42px) 34px 0; border-bottom: 1px solid var(--line); }
+.skill-card + .skill-card { padding-left: clamp(22px, 3vw, 42px); border-left: 1px solid var(--line); }
+.skill-card > span {
+  color: var(--ember);
+  font: 500 9px/1.2 var(--font-mono), monospace;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.skill-card h4 { margin: 28px 0 14px; font: 500 34px/1 var(--font-display), serif; }
+.skill-card p { max-width: 570px; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
 .class-study {
   grid-column: 1 / -1;
   overflow: hidden;
@@ -393,6 +417,8 @@ blockquote {
 }
 .sorcerer-study { border-color: rgba(108, 128, 148, .42); }
 .sorcerer-study figcaption span { color: #91a8b9; }
+.sorcerer-skills .skill-card > span { color: #91a8b9; }
+.teleport-study { margin-bottom: clamp(16px, 2vw, 28px); }
 .rogue-section {
   background:
     radial-gradient(circle at 18% 34%, rgba(69, 105, 58, .12), transparent 31rem),
@@ -405,6 +431,7 @@ blockquote {
 }
 .rogue-study { border-color: rgba(85, 116, 73, .44); }
 .rogue-study figcaption span { color: #8fa879; }
+.rogue-skills .skill-card > span { color: #8fa879; }
 
 .world { background: #0c0f0f; }
 .world-copy p { max-width: 650px; color: var(--muted); }
@@ -520,6 +547,9 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 25px
   .class-notes > div, .class-notes > div + div { padding: 24px 0; border-right: 0; }
   .class-notes > div:first-child { border-bottom: 1px solid var(--line); }
   .class-study figcaption { grid-template-columns: 1fr; gap: 18px; }
+  .class-skills { grid-template-columns: 1fr; gap: 28px; }
+  .skill-list { grid-template-columns: 1fr; }
+  .skill-card, .skill-card + .skill-card { min-height: auto; padding: 25px 0 29px; border-left: 0; }
   .anti-grid { grid-template-columns: 1fr; }
   footer { flex-direction: column; }
 }
