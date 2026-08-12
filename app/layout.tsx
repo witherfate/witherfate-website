@@ -12,21 +12,21 @@ const display = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://witherfate.com"),
-  title: "Witherfate — A World Worth Returning To",
+  title: "Witherfate — The End Is Near",
   description:
     "A premium, server-authoritative action RPG built for intentional group play, persistent progression, and a world protected from real-world money.",
   openGraph: {
-    title: "Witherfate — A World Worth Returning To",
+    title: "Witherfate — The End Is Near",
     description:
       "A world protected from real-world money, seasonal resets, and monetization systems built at the cost of the game.",
     url: "https://witherfate.com",
     siteName: "Witherfate",
     type: "website",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Witherfate — A World Worth Returning To" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Witherfate — The End Is Near" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Witherfate — A World Worth Returning To",
+    title: "Witherfate — The End Is Near",
     description:
       "A world protected from real-world money, seasonal resets, and monetization systems built at the cost of the game.",
     images: ["/og.png"],

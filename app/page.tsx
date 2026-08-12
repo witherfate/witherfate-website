@@ -4,13 +4,17 @@ import {
   Castle,
   Clock3,
   CreditCard,
+  Flame,
   Handshake,
   RefreshCcw,
   Server,
   Shield,
   ShoppingBag,
+  Skull,
+  Snowflake,
   Sword,
   Users,
+  Zap,
 } from "lucide-react";
 
 const industryFailures = [
@@ -67,6 +71,34 @@ const journey = [
   ["Return changed", "Carry home items, knowledge, wealth, and consequences that become part of your character’s continuing history."],
 ];
 
+const damageTypes = [
+  {
+    icon: Sword,
+    title: "Physical",
+    copy: "Weapons, impacts, wounds, and bleeding.",
+  },
+  {
+    icon: Flame,
+    title: "Fire",
+    copy: "Flame, burning, and intense heat.",
+  },
+  {
+    icon: Snowflake,
+    title: "Cold",
+    copy: "Frost, chilling, and freezing.",
+  },
+  {
+    icon: Zap,
+    title: "Lightning",
+    copy: "Electrical shocks and chaining energy.",
+  },
+  {
+    icon: Skull,
+    title: "Wither",
+    copy: "Poison, disease, blight, and supernatural decay.",
+  },
+];
+
 const exclusions = [
   "No microtransactions",
   "No paid cosmetics",
@@ -95,11 +127,11 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <h1 className="sr-only">Witherfate — A World Worth Returning To</h1>
+        <h1 className="sr-only">Witherfate — The End Is Near</h1>
         <div className="hero-art">
           <img
             src="/og.png"
-            alt="Witherfate — A World Worth Returning To. An ancient stone arch opens onto an ember-lit darkness."
+            alt="Witherfate — The End Is Near. An ancient stone arch opens onto an ember-lit darkness."
           />
         </div>
         <div className="hero-caption">
@@ -237,6 +269,36 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="damage-section" id="damage" aria-labelledby="damage-title">
+        <div className="damage-heading">
+          <div className="section-label">Combat and itemization</div>
+          <h2 id="damage-title">Five clearly defined damage types.</h2>
+          <p>
+            Every attack belongs to a category players can understand at a glance, and every
+            category has a corresponding resistance. The system stays readable as skills,
+            enemies, and equipment become more complex.
+          </p>
+        </div>
+        <div className="damage-grid">
+          {damageTypes.map((damageType) => {
+            const Icon = damageType.icon;
+            return (
+              <article className={`damage-card damage-${damageType.title.toLowerCase()}`} key={damageType.title}>
+                <div className="damage-icon" aria-hidden="true">
+                  <Icon strokeWidth={1.25} />
+                </div>
+                <h3>{damageType.title}</h3>
+                <p>{damageType.copy}</p>
+              </article>
+            );
+          })}
+        </div>
+        <p className="damage-principle">
+          Depth comes from how these damage types interact with skills, conditions, enemies, and
+          equipment—not from adding another resistance for every new mechanic.
+        </p>
+      </section>
+
       <section className="online-play-section" aria-labelledby="online-play-title">
         <div className="online-play-heading">
           <div className="section-label">A multiplayer game at heart</div>
@@ -292,6 +354,7 @@ export default function Home() {
             power, but because other people still depend on what it can do.
           </p>
           <div className="class-traits" aria-label="Defiler combat identity">
+            <span>Physical / Wither damage</span>
             <span>Enemy disruption</span>
             <span>Battlefield corruption</span>
             <span>Party amplification</span>
