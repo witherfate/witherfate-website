@@ -524,7 +524,7 @@ blockquote {
 .berserker-study { border-color: rgba(135, 62, 49, .45); }
 .berserker-study figcaption span,
 .berserker-skills .skill-card > span { color: #bd725e; }
-.shield-breaker-study { margin-bottom: clamp(16px, 2vw, 28px); }
+.shield-bash-study { margin-bottom: clamp(16px, 2vw, 28px); }
 .crusader-section {
   background:
     radial-gradient(circle at 22% 28%, rgba(176, 139, 77, .105), transparent 31rem),

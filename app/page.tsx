@@ -735,10 +735,10 @@ export default function Home() {
           <div className="skill-list">
             <article className="skill-card">
               <span>Physical · Melee · Stagger</span>
-              <h4>Shield Breaker</h4>
+              <h4>Shield Bash</h4>
               <p>
-                Commit overwhelming force against an enemy&apos;s guard, dealing heavy stagger and
-                breaking defensive posture. A shattered guard exposes the target to the
+                Drive the shield into an enemy with overwhelming force, dealing heavy stagger and
+                breaking defensive posture. A successful bash exposes the target to the
                 Berserker&apos;s next attack and to every companion ready to exploit the opening.
               </p>
             </article>
@@ -753,20 +753,21 @@ export default function Home() {
             </article>
           </div>
         </div>
-        <figure className="class-study berserker-study shield-breaker-study">
+        <figure className="class-study berserker-study shield-bash-study">
           <img
             src="/art-berserker-shield-breaker.webp"
             width="1536"
             height="1024"
             loading="lazy"
             decoding="async"
-            alt="The Berserker tears open an armored formation in a rain-lashed gatehouse, wrenching aside a shield as another strike breaks through the exposed line."
+            alt="The Berserker drives his shield into an armored enemy in a rain-lashed gatehouse, staggering the formation and opening its defensive line."
           />
           <figcaption>
-            <span>Shield Breaker</span>
+            <span>Shield Bash</span>
             <p>
-              Defense is only structure waiting to fail. Shield Breaker overwhelms a guarded
-              enemy, destroys its stability, and creates an opening the entire group can punish.
+              The shield is not passive protection. Shield Bash turns the Berserker&apos;s weight and
+              forward momentum into a brutal impact that staggers the target and creates an
+              opening the entire group can punish.
             </p>
           </figcaption>
         </figure>
