@@ -118,11 +118,11 @@ export default function Home() {
           WITHERFATE
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#failure">Industry</a>
-          <a href="#vision">Principles</a>
-          <a href="#experience">Gameplay</a>
           <a href="#classes">Classes</a>
-          <a href="#world">World</a>
+          <a href="#monsters">Monsters</a>
+          <a href="#damage">Damage</a>
+          <a href="#philosophy">Philosophy</a>
+          <a href="#motivation">Motivation</a>
         </nav>
       </header>
 
@@ -140,7 +140,25 @@ export default function Home() {
             Fast, loot-driven combat. Intentional cooperation. Authored dark-fantasy dungeons.
             No microtransactions. No seasonal resets. No real-world money inside the game.
           </p>
-          <a className="text-link" href="#failure">Why Witherfate <span aria-hidden="true">↓</span></a>
+          <a className="text-link" href="#classes">Meet the classes <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section className="game-intro" aria-labelledby="game-intro-title">
+        <div className="section-label">What is Witherfate?</div>
+        <div className="game-intro-copy">
+          <h2 id="game-intro-title">A premium online action RPG built around the adventure—not the storefront.</h2>
+          <p>
+            Enter a hopeless dark-fantasy world through fast, loot-driven combat, authored
+            dungeons, persistent characters, and deliberate cooperation. Form a group for harder
+            enemies and greater rewards, or venture alone without being pushed into a crowded
+            shared world.
+          </p>
+          <p>
+            Witherfate is purchased as a game and expanded with substantial new content. There are
+            no microtransactions, seasonal resets, battle passes, premium currencies, or real-world
+            money inside the world.
+          </p>
         </div>
       </section>
 
@@ -326,7 +344,33 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="classes-section" id="classes" aria-labelledby="defiler-title">
+      <section className="classes-overview" id="classes" aria-labelledby="classes-title">
+        <div className="classes-overview-heading">
+          <div className="section-label">Five playable classes</div>
+          <h2 id="classes-title">Choose how you will defy the end.</h2>
+          <p>
+            Every class has a distinct combat identity, equipment language, group role, and human
+            cost. They are built to stand alone, become stronger together, and remain immediately
+            readable in the chaos of a fight.
+          </p>
+        </div>
+        <figure className="classes-overview-art">
+          <img
+            src="/art-classes-tavern.webp"
+            width="1672"
+            height="941"
+            loading="lazy"
+            decoding="async"
+            alt="The Berserker, Defiler, Sorceress, Rogue, and Crusader gather around a campaign map in a storm-darkened tavern."
+          />
+          <figcaption>
+            <span>The revealed roster</span>
+            <p>Berserker · Defiler · Sorceress · Rogue · Crusader</p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section className="classes-section" aria-labelledby="defiler-title">
         <figure className="class-art">
           <img
             src="/art-defiler.webp"
@@ -833,6 +877,71 @@ export default function Home() {
             </p>
           </figcaption>
         </figure>
+      </section>
+
+      <section className="monsters-section" id="monsters" aria-labelledby="monsters-title">
+        <div className="monsters-heading">
+          <div className="section-label">Monsters of Witherfate</div>
+          <h2 id="monsters-title">The world does not need to be saved. It needs to be survived.</h2>
+          <p>
+            Witherfate&apos;s enemies are not interchangeable targets. Each creature belongs to a
+            place, a history, and a form of corruption—built to be understood through silhouette,
+            behavior, and the evidence it leaves behind.
+          </p>
+        </div>
+        <div className="monster-feature">
+          <figure className="monster-art">
+            <img
+              src="/art-succubus.webp"
+              width="1024"
+              height="1536"
+              loading="lazy"
+              decoding="async"
+              alt="A beautiful and malevolent Succubus stands in a ruined moonlit cathedral, with black horns, folded wings, and a barbed tail."
+            />
+          </figure>
+          <div className="monster-copy">
+            <div className="section-label">Creature concept · Succubus</div>
+            <h3>The Succubus</h3>
+            <p className="monster-lead">
+              A predator that makes desire feel like the victim&apos;s own idea.
+            </p>
+            <p>
+              The Succubus does not hide her evil. She makes people believe they are strong enough
+              to approach it. Beauty, attention, and apparent vulnerability are weapons used to
+              isolate the willing from anyone who might still save them.
+            </p>
+            <p>
+              Beneath the cultivated human form is something patient, ancient, and incapable of
+              affection. The disguise is not meant to pass unnoticed—it is meant to be noticed too
+              late.
+            </p>
+            <div className="monster-traits" aria-label="Succubus creature identity">
+              <span>Predatory deception</span>
+              <span>Isolation</span>
+              <span>Corruption</span>
+              <span>Demonic</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="content-divider philosophy-divider" id="philosophy" aria-labelledby="philosophy-title">
+        <div className="section-label">Deeper reading</div>
+        <h2 id="philosophy-title">Philosophy</h2>
+        <p>How Witherfate approaches combat, cooperation, progression, and the integrity of its world.</p>
+      </section>
+
+      <section className="content-divider motivation-divider" id="motivation" aria-labelledby="motivation-title">
+        <div className="section-label">Why build Witherfate?</div>
+        <h2 id="motivation-title">Motivation</h2>
+        <p>The compromises the industry normalized—and the experience Witherfate intends to restore.</p>
+      </section>
+
+      <section className="content-divider business-divider" id="business-model" aria-labelledby="business-title">
+        <div className="section-label">How the game sustains itself</div>
+        <h2 id="business-title">Business model</h2>
+        <p>A commercial model that funds more game without turning the world into a sales floor.</p>
       </section>
 
       <section className="world" id="world">

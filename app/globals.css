@@ -13,6 +13,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; background: var(--coal); }
+main { display: flex; flex-direction: column; }
 body {
   margin: 0;
   background:
@@ -66,6 +67,7 @@ nav a {
 nav a:hover, nav a:focus-visible { color: var(--ink); }
 
 .hero {
+  order: 0;
   position: relative;
   overflow: hidden;
   padding-top: 78px;
@@ -113,7 +115,31 @@ nav a:hover, nav a:focus-visible { color: var(--ink); }
 }
 .text-link span { margin-left: 16px; color: var(--ember); }
 
+.game-intro {
+  order: 1;
+  display: grid;
+  grid-template-columns: minmax(150px, .55fr) minmax(0, 1.75fr);
+  gap: clamp(40px, 8vw, 140px);
+  padding: clamp(76px, 9vw, 125px) clamp(24px, 9vw, 150px);
+  border-bottom: 1px solid var(--line);
+  background: #0c0f0f;
+}
+.game-intro-copy { max-width: 980px; }
+.game-intro-copy h2 {
+  max-width: 920px;
+  margin: 0 0 34px;
+  font: 500 clamp(38px, 4.6vw, 70px)/1 var(--font-display), serif;
+  letter-spacing: -.025em;
+}
+.game-intro-copy p {
+  max-width: 760px;
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 17px;
+}
+
 .industry-section {
+  order: 12;
   padding: clamp(90px, 11vw, 160px) clamp(24px, 6vw, 100px);
   border-bottom: 1px solid var(--line);
   background: linear-gradient(180deg, rgba(154, 76, 54, .08), rgba(16, 19, 19, .35));
@@ -165,6 +191,7 @@ nav a:hover, nav a:focus-visible { color: var(--ink); }
   padding: clamp(90px, 12vw, 180px) clamp(24px, 9vw, 150px);
   border-bottom: 1px solid var(--line);
 }
+.manifesto { order: 13; }
 .manifesto-copy { max-width: 850px; }
 .manifesto-detail { min-width: 0; max-width: 850px; }
 .manifesto-art { margin-top: clamp(40px, 5vw, 68px); }
@@ -182,7 +209,7 @@ blockquote {
   font: 400 clamp(23px, 2.5vw, 36px)/1.25 var(--font-display), serif;
 }
 
-.principles-section { padding: clamp(90px, 11vw, 160px) clamp(24px, 6vw, 100px); border-bottom: 1px solid var(--line); }
+.principles-section { order: 10; padding: clamp(90px, 11vw, 160px) clamp(24px, 6vw, 100px); border-bottom: 1px solid var(--line); }
 .section-intro { max-width: 760px; margin: 0 auto 80px; text-align: center; }
 .section-intro h2, .experience-heading h2, .world h2, .economy-section h2 {
   margin: 20px 0 0;
@@ -222,7 +249,7 @@ blockquote {
 .principle h3 { margin: 56px 0 22px; font: 500 28px/1.1 var(--font-display), serif; }
 .principle p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
 
-.experience { grid-template-columns: .9fr 1.1fr; }
+.experience { order: 7; grid-template-columns: .9fr 1.1fr; }
 .experience-heading { position: sticky; top: 70px; align-self: start; }
 .experience-heading p { max-width: 540px; margin-top: 30px; color: var(--muted); }
 .experience-detail, .world-detail, .economy-detail { min-width: 0; }
@@ -244,6 +271,7 @@ blockquote {
 .journey-list p { margin: 0; max-width: 580px; color: var(--muted); font-size: 14px; }
 
 .damage-section {
+  order: 5;
   padding: clamp(90px, 11vw, 160px) clamp(24px, 6vw, 100px);
   border-bottom: 1px solid var(--line);
   background:
@@ -295,6 +323,7 @@ blockquote {
 }
 
 .online-play-section {
+  order: 8;
   padding: clamp(90px, 11vw, 160px) clamp(24px, 9vw, 150px);
   border-bottom: 1px solid var(--line);
   background: #0c0f0f;
@@ -318,6 +347,7 @@ blockquote {
 .online-play-card p { max-width: 620px; margin: 0; color: var(--muted); }
 
 .classes-section {
+  order: 3;
   display: grid;
   grid-template-columns: minmax(320px, .85fr) minmax(0, 1.15fr);
   align-items: center;
@@ -326,6 +356,53 @@ blockquote {
   border-bottom: 1px solid var(--line);
   background: radial-gradient(circle at 16% 45%, rgba(154, 76, 54, .08), transparent 34rem);
 }
+.classes-overview {
+  order: 2;
+  padding: clamp(90px, 10vw, 145px) clamp(24px, 6vw, 100px) clamp(72px, 9vw, 125px);
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 50% 45%, rgba(154, 76, 54, .08), transparent 42rem),
+    #090b0b;
+}
+.classes-overview-heading {
+  max-width: 950px;
+  margin: 0 auto clamp(48px, 6vw, 80px);
+  text-align: center;
+}
+.classes-overview-heading h2 {
+  margin: 20px 0 28px;
+  font: 500 clamp(48px, 6vw, 88px)/.96 var(--font-display), serif;
+  letter-spacing: -.03em;
+}
+.classes-overview-heading p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 17px;
+}
+.classes-overview-art {
+  overflow: hidden;
+  max-width: 1500px;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  background: #050606;
+}
+.classes-overview-art img { display: block; width: 100%; height: auto; }
+.classes-overview-art figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 21px clamp(20px, 3vw, 42px);
+  border-top: 1px solid var(--line);
+}
+.classes-overview-art figcaption span {
+  color: var(--ember);
+  font: 500 10px/1.2 var(--font-mono), monospace;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.classes-overview-art figcaption p { margin: 0; color: var(--muted); font-size: 13px; }
 .class-art {
   position: relative;
   overflow: hidden;
@@ -462,7 +539,80 @@ blockquote {
 .crusader-study figcaption span,
 .crusader-skills .skill-card > span { color: #c29a5e; }
 
-.world { background: #0c0f0f; }
+.monsters-section {
+  order: 4;
+  padding: clamp(90px, 11vw, 160px) clamp(24px, 9vw, 150px);
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 74% 34%, rgba(102, 21, 26, .13), transparent 34rem),
+    radial-gradient(circle at 18% 75%, rgba(72, 55, 84, .08), transparent 30rem),
+    #0a090a;
+}
+.monsters-heading { max-width: 960px; margin-bottom: clamp(54px, 7vw, 94px); }
+.monsters-heading h2 {
+  margin: 20px 0 30px;
+  font: 500 clamp(48px, 5.8vw, 88px)/.96 var(--font-display), serif;
+  letter-spacing: -.03em;
+}
+.monsters-heading p { max-width: 720px; margin: 0; color: var(--muted); font-size: 17px; }
+.monster-feature {
+  display: grid;
+  grid-template-columns: minmax(300px, .82fr) minmax(0, 1.18fr);
+  align-items: center;
+  gap: clamp(50px, 9vw, 150px);
+  max-width: 1320px;
+}
+.monster-art {
+  overflow: hidden;
+  width: 100%;
+  max-width: 590px;
+  margin: 0;
+  border: 1px solid rgba(121, 55, 58, .45);
+  background: #050506;
+}
+.monster-art img { display: block; width: 100%; height: auto; }
+.monster-copy { max-width: 700px; }
+.monster-copy h3 {
+  margin: 18px 0 18px;
+  font: 500 clamp(58px, 7vw, 106px)/.9 var(--font-display), serif;
+  letter-spacing: -.03em;
+}
+.monster-copy > p { max-width: 640px; color: var(--muted); }
+.monster-copy .monster-lead {
+  margin: 30px 0 34px;
+  color: #c7b7b1;
+  font: 400 clamp(27px, 2.8vw, 42px)/1.15 var(--font-display), serif;
+}
+.monster-traits { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 38px; }
+.monster-traits span {
+  padding: 9px 12px;
+  border: 1px solid rgba(125, 49, 52, .5);
+  color: #bba9a5;
+  background: rgba(101, 37, 41, .06);
+  font: 500 10px/1 var(--font-mono), monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.content-divider {
+  padding: clamp(74px, 9vw, 120px) clamp(24px, 9vw, 150px);
+  border-top: 1px solid rgba(154, 76, 54, .28);
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(110deg, rgba(154, 76, 54, .09), transparent 44%),
+    #080a0a;
+}
+.content-divider h2 {
+  margin: 18px 0 18px;
+  font: 500 clamp(58px, 8vw, 118px)/.86 var(--font-display), serif;
+  letter-spacing: -.035em;
+}
+.content-divider p { max-width: 720px; margin: 0; color: var(--muted); font-size: 17px; }
+.philosophy-divider { order: 6; }
+.motivation-divider { order: 11; }
+.business-divider { order: 15; }
+
+.world { order: 9; background: #0c0f0f; }
 .world-copy p { max-width: 650px; color: var(--muted); }
 .world-copy h2 { margin-bottom: 36px; }
 .world-diagram { margin-top: 36px; }
@@ -472,10 +622,11 @@ blockquote {
 .world-diagram small { display: block; margin-top: 7px; color: var(--dim); font: 500 10px/1 var(--font-mono), monospace; letter-spacing: .1em; text-transform: uppercase; }
 .world-diagram i { display: block; width: 1px; height: 34px; margin-left: 14px; background: var(--rust); }
 
-.economy-section { grid-template-columns: 1fr 1fr; }
+.economy-section { order: 16; grid-template-columns: 1fr 1fr; }
 .economy-copy { max-width: 650px; margin-top: 36px; color: var(--muted); }
 .economy-copy p:first-child { margin-top: 0; color: #bbb2a5; font-size: 20px; }
 .commitments-section {
+  order: 17;
   padding: clamp(90px, 11vw, 160px) clamp(24px, 6vw, 100px);
   border-bottom: 1px solid var(--line);
   background: #0c0f0f;
@@ -494,6 +645,7 @@ blockquote {
 .commitment h3 { margin: 0 0 28px; font: 500 32px/1.08 var(--font-display), serif; }
 .commitment p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.75; }
 .anti-patterns {
+  order: 18;
   padding: clamp(90px, 10vw, 145px) clamp(24px, 9vw, 150px);
   border-top: 1px solid rgba(154, 76, 54, .35);
   border-bottom: 1px solid var(--line);
@@ -518,6 +670,7 @@ blockquote {
 .anti-item svg { flex: 0 0 auto; width: 19px; height: 19px; color: var(--rust); }
 
 .audience-section {
+  order: 14;
   display: grid;
   grid-template-columns: minmax(150px, .65fr) minmax(0, 1.7fr);
   gap: clamp(40px, 8vw, 140px);
@@ -528,17 +681,19 @@ blockquote {
 .audience-copy p { max-width: 730px; color: var(--muted); font-size: 18px; }
 .audience-copy p:last-child { margin-top: 34px; color: #c8bcae; font: 500 25px/1.2 var(--font-display), serif; }
 
-.closing { min-height: 70vh; display: grid; place-items: center; position: relative; overflow: hidden; padding: 100px 24px; text-align: center; }
+.closing { order: 19; min-height: 70vh; display: grid; place-items: center; position: relative; overflow: hidden; padding: 100px 24px; text-align: center; }
 .closing-mark { position: absolute; color: rgba(154, 76, 54, .06); font: 500 min(72vw, 800px)/1 var(--font-display), serif; }
 .closing p { position: relative; margin: 0; font: 400 clamp(42px, 5.8vw, 86px)/1.05 var(--font-display), serif; }
-footer { display: flex; justify-content: space-between; gap: 20px; padding: 25px clamp(24px, 5vw, 80px); border-top: 1px solid var(--line); color: var(--dim); font: 500 9px/1.3 var(--font-mono), monospace; letter-spacing: .12em; text-transform: uppercase; }
+footer { order: 20; display: flex; justify-content: space-between; gap: 20px; padding: 25px clamp(24px, 5vw, 80px); border-top: 1px solid var(--line); color: var(--dim); font: 500 9px/1.3 var(--font-mono), monospace; letter-spacing: .12em; text-transform: uppercase; }
 
 @media (max-width: 900px) {
   nav { display: none; }
   .hero { padding-top: 70px; }
   .hero-caption { grid-template-columns: 1fr; gap: 24px; }
   .hero-caption .text-link { margin-top: 4px; }
-  .industry-heading, .manifesto, .experience, .classes-section, .world, .economy-section, .audience-section { grid-template-columns: 1fr; }
+  .game-intro, .industry-heading, .manifesto, .experience, .classes-section, .monster-feature, .world, .economy-section, .audience-section { grid-template-columns: 1fr; }
+  .monster-art { margin: 0 auto; }
+  .monster-copy { margin: 0 auto; }
   .class-art { margin: 0 auto; }
   .class-copy { max-width: 760px; margin: 0 auto; }
   .sorcerer-copy { order: 2; }
@@ -583,6 +738,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 25px
   .class-notes > div:first-child { border-bottom: 1px solid var(--line); }
   .class-study figcaption { grid-template-columns: 1fr; gap: 18px; }
   .class-skills { grid-template-columns: 1fr; gap: 28px; }
+  .classes-overview-art figcaption { align-items: flex-start; flex-direction: column; gap: 8px; }
   .skill-list { grid-template-columns: 1fr; }
   .skill-card, .skill-card + .skill-card { min-height: auto; padding: 25px 0 29px; border-left: 0; }
   .anti-grid { grid-template-columns: 1fr; }
