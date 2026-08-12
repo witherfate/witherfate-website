@@ -397,6 +397,59 @@ export default function Home() {
         </figure>
       </section>
 
+      <section className="classes-section sorcerer-section" aria-labelledby="sorcerer-title">
+        <div className="class-copy sorcerer-copy">
+          <div className="section-label">Classes · Second revealed</div>
+          <h2 id="sorcerer-title">The Sorcerer</h2>
+          <p className="class-lead">
+            A master of elemental power whose discipline is measured by what he can contain.
+          </p>
+          <p>
+            The Sorcerer is Witherfate&apos;s dedicated ranged caster. Fire destroys and denies
+            ground, Cold slows and controls advancing enemies, and Lightning strikes quickly and
+            carries through clustered targets.
+          </p>
+          <p>
+            Sorcerers inherit the knowledge of an order that helped ruin the civilization it was
+            sworn to protect. Their magic remains necessary, but never harmless. Every spell asks
+            a mortal body to command forces it was not built to survive.
+          </p>
+          <div className="class-traits sorcerer-traits" aria-label="Sorcerer combat identity">
+            <span>Fire / Cold / Lightning damage</span>
+            <span>Ranged spellcasting</span>
+            <span>Area damage</span>
+            <span>Battlefield control</span>
+            <span>Fragile defenses</span>
+          </div>
+          <div className="class-notes">
+            <div>
+              <h3>Group role</h3>
+              <p>
+                Destroy concentrated threats from range and use elemental control to shape where
+                enemies can safely move.
+              </p>
+            </div>
+            <div>
+              <h3>Character fantasy</h3>
+              <p>
+                Wield familiar elemental magic with the precision of a lifelong scholar—and bear
+                the physical consequences when that control fails.
+              </p>
+            </div>
+          </div>
+        </div>
+        <figure className="class-art sorcerer-art">
+          <img
+            src="/art-sorcerer.webp"
+            width="1023"
+            height="1537"
+            loading="lazy"
+            decoding="async"
+            alt="An elderly Sorcerer with iron-gray hair and beard conjures blue-white lightning in a candlelit library, the same charge visible in his eyes."
+          />
+        </figure>
+      </section>
+
       <section className="world" id="world">
         <div className="world-copy">
           <div className="section-label">Persistent progression without seasons</div>

@@ -379,6 +379,18 @@ blockquote {
   text-transform: uppercase;
 }
 .class-study figcaption p { max-width: 770px; margin: -5px 0 0; color: var(--muted); }
+.sorcerer-section {
+  background:
+    radial-gradient(circle at 78% 32%, rgba(111, 137, 160, .105), transparent 30rem),
+    radial-gradient(circle at 24% 62%, rgba(118, 38, 42, .105), transparent 34rem),
+    #0c0f0f;
+}
+.sorcerer-copy { justify-self: end; }
+.sorcerer-art { justify-self: start; }
+.sorcerer-traits span {
+  border-color: rgba(108, 128, 148, .48);
+  background: rgba(77, 102, 128, .055);
+}
 
 .world { background: #0c0f0f; }
 .world-copy p { max-width: 650px; color: var(--muted); }
@@ -459,6 +471,8 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 25px
   .industry-heading, .manifesto, .experience, .classes-section, .world, .economy-section, .audience-section { grid-template-columns: 1fr; }
   .class-art { margin: 0 auto; }
   .class-copy { max-width: 760px; margin: 0 auto; }
+  .sorcerer-copy { order: 2; }
+  .sorcerer-art { order: 1; }
   .failure-grid { grid-template-columns: 1fr 1fr; }
   .failure:nth-child(2) { border-right: 0; }
   .failure:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
