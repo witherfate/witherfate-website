@@ -393,6 +393,24 @@ export default function Home() {
             </article>
           </div>
         </div>
+        <figure className="class-study defiler-blight-study">
+          <img
+            src="/art-defiler-blight.webp"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+            alt="The Defiler spreads black-red Blight through a moonlit church graveyard, binding shrouded revenants and a funerary grave warden in corrupted roots."
+          />
+          <figcaption>
+            <span>Blight</span>
+            <p>
+              Blight turns occupied ground against the creatures standing on it. Corruption spreads
+              through soil and stone, seizing grave-born enemies in black roots while sustained
+              exposure erodes their defenses and punishes anything that refuses to move.
+            </p>
+          </figcaption>
+        </figure>
         <figure className="class-study">
           <img
             src="/art-defiler-black-anatomy.webp"
