@@ -432,6 +432,22 @@ blockquote {
 .rogue-study { border-color: rgba(85, 116, 73, .44); }
 .rogue-study figcaption span { color: #8fa879; }
 .rogue-skills .skill-card > span { color: #8fa879; }
+.berserker-section {
+  background:
+    radial-gradient(circle at 78% 30%, rgba(139, 37, 31, .11), transparent 31rem),
+    radial-gradient(circle at 22% 72%, rgba(126, 73, 43, .07), transparent 35rem),
+    #0c0a0a;
+}
+.berserker-copy { justify-self: end; }
+.berserker-art { justify-self: start; }
+.berserker-traits span {
+  border-color: rgba(134, 50, 42, .54);
+  background: rgba(127, 42, 35, .065);
+}
+.berserker-study { border-color: rgba(135, 62, 49, .45); }
+.berserker-study figcaption span,
+.berserker-skills .skill-card > span { color: #bd725e; }
+.shield-breaker-study { margin-bottom: clamp(16px, 2vw, 28px); }
 
 .world { background: #0c0f0f; }
 .world-copy p { max-width: 650px; color: var(--muted); }
@@ -514,6 +530,12 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 25px
   .class-copy { max-width: 760px; margin: 0 auto; }
   .sorcerer-copy { order: 2; }
   .sorcerer-art { order: 1; }
+  .sorcerer-skills { order: 3; }
+  .sorcerer-study { order: 4; }
+  .berserker-copy { order: 2; }
+  .berserker-art { order: 1; }
+  .berserker-skills { order: 3; }
+  .berserker-study { order: 4; }
   .failure-grid { grid-template-columns: 1fr 1fr; }
   .failure:nth-child(2) { border-right: 0; }
   .failure:nth-child(-n+2) { border-bottom: 1px solid var(--line); }

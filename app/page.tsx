@@ -613,6 +613,121 @@ export default function Home() {
         </figure>
       </section>
 
+      <section className="classes-section berserker-section" aria-labelledby="berserker-title">
+        <div className="class-copy berserker-copy">
+          <div className="section-label">Classes · Fourth revealed</div>
+          <h2 id="berserker-title">The Berserker</h2>
+          <p className="class-lead">
+            A bloodlusted frontline killer who turns pain, momentum, and physical force into
+            relentless aggression.
+          </p>
+          <p>
+            The Berserker is Witherfate&apos;s dedicated aggressive melee class. Heavy armor keeps him
+            in the fight while swords, axes, and two-handed weapons deliver committed Physical
+            attacks built around impact, Bleeding, stagger, and execution.
+          </p>
+          <p>
+            Fury rewards remaining in combat and continuing the attack when retreat would be
+            rational. As it rises, the Berserker becomes faster and more dangerous—but increasingly
+            dependent on violence to survive what his own recklessness has begun.
+          </p>
+          <div className="class-traits berserker-traits" aria-label="Berserker combat identity">
+            <span>Physical damage</span>
+            <span>Axes / Swords</span>
+            <span>Bleeding</span>
+            <span>Stagger / Armor break</span>
+            <span>Fury</span>
+          </div>
+          <div className="class-notes">
+            <div>
+              <h3>Group role</h3>
+              <p>
+                Break the enemy line, stagger armored threats, and convert sustained aggression
+                into pressure that gives more vulnerable companions room to act.
+              </p>
+            </div>
+            <div>
+              <h3>Character fantasy</h3>
+              <p>
+                Become more dangerous as a fight deteriorates. The Berserker does not stop feeling
+                pain—he loses the part of himself that cares what it means.
+              </p>
+            </div>
+          </div>
+        </div>
+        <figure className="class-art berserker-art">
+          <img
+            src="/art-berserker.webp"
+            width="1023"
+            height="1537"
+            loading="lazy"
+            decoding="async"
+            alt="The Berserker, a towering plate-armored veteran with a warrior ponytail, blood-red eyes, and two battle-worn axes."
+          />
+        </figure>
+        <div className="class-skills berserker-skills" aria-labelledby="berserker-skills-title">
+          <div className="class-skills-heading">
+            <div className="section-label">Revealed skills</div>
+            <h3 id="berserker-skills-title">Berserker skills</h3>
+          </div>
+          <div className="skill-list">
+            <article className="skill-card">
+              <span>Physical · Melee · Stagger</span>
+              <h4>Shield Breaker</h4>
+              <p>
+                Commit overwhelming force against an enemy&apos;s guard, dealing heavy stagger and
+                breaking defensive posture. A shattered guard exposes the target to the
+                Berserker&apos;s next attack and to every companion ready to exploit the opening.
+              </p>
+            </article>
+            <article className="skill-card">
+              <span>Physical · Melee · Bleeding</span>
+              <h4>Cleave</h4>
+              <p>
+                Drive a broad committed strike through the space ahead, dealing heavy Physical
+                damage to nearby enemies and applying Bleeding. Positioning and weapon reach
+                determine how much of the advancing group the attack can punish.
+              </p>
+            </article>
+          </div>
+        </div>
+        <figure className="class-study berserker-study shield-breaker-study">
+          <img
+            src="/art-berserker-shield-breaker.webp"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+            alt="The Berserker tears open an armored formation in a rain-lashed gatehouse, wrenching aside a shield as another strike breaks through the exposed line."
+          />
+          <figcaption>
+            <span>Shield Breaker</span>
+            <p>
+              Defense is only structure waiting to fail. Shield Breaker overwhelms a guarded
+              enemy, destroys its stability, and creates an opening the entire group can punish.
+            </p>
+          </figcaption>
+        </figure>
+        <figure className="class-study berserker-study">
+          <img
+            src="/art-berserker-cleave.webp"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+            alt="The Berserker completes a two-handed Cleave while plague ghouls close around him in a burning, rain-soaked village square."
+          />
+          <figcaption>
+            <span>Cleave</span>
+            <p>
+              Cleave turns planted footwork and full-body commitment into a single punishing sweep.
+              Against a loose swarm, the blade controls the space ahead while Fury rewards the
+              Berserker for remaining surrounded.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+
       <section className="world" id="world">
         <div className="world-copy">
           <div className="section-label">Persistent progression without seasons</div>
