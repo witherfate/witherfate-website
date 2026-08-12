@@ -393,6 +393,18 @@ blockquote {
 }
 .sorcerer-study { border-color: rgba(108, 128, 148, .42); }
 .sorcerer-study figcaption span { color: #91a8b9; }
+.rogue-section {
+  background:
+    radial-gradient(circle at 18% 34%, rgba(69, 105, 58, .12), transparent 31rem),
+    radial-gradient(circle at 78% 66%, rgba(95, 72, 46, .075), transparent 34rem),
+    #090c0b;
+}
+.rogue-traits span {
+  border-color: rgba(90, 126, 71, .5);
+  background: rgba(68, 108, 57, .06);
+}
+.rogue-study { border-color: rgba(85, 116, 73, .44); }
+.rogue-study figcaption span { color: #8fa879; }
 
 .world { background: #0c0f0f; }
 .world-copy p { max-width: 650px; color: var(--muted); }

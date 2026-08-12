@@ -468,6 +468,76 @@ export default function Home() {
         </figure>
       </section>
 
+      <section className="classes-section rogue-section" aria-labelledby="rogue-title">
+        <figure className="class-art rogue-art">
+          <img
+            src="/art-rogue.webp"
+            width="1023"
+            height="1537"
+            loading="lazy"
+            decoding="async"
+            alt="The Rogue stands ready in her hidden den, cloaked and armed with a poisoned dagger, bow, traps, and a compact alchemical poison kit."
+          />
+        </figure>
+        <div className="class-copy">
+          <div className="section-label">Classes · Third revealed</div>
+          <h2 id="rogue-title">The Rogue</h2>
+          <p className="class-lead">
+            A thief, hunter, and practiced killer who decides when—and how—a fight begins.
+          </p>
+          <p>
+            The Rogue combines daggers, bows, poison, bleeding, traps, and stealth. She studies a
+            battlefield before committing, prepares the ground in her favor, and attacks from the
+            position her enemy failed to notice.
+          </p>
+          <p>
+            Her methods are practical rather than honorable. Every hidden wire, stolen key, coated
+            blade, and carefully chosen escape route exists to make a fair fight unnecessary.
+          </p>
+          <div className="class-traits rogue-traits" aria-label="Rogue combat identity">
+            <span>Physical / Wither damage</span>
+            <span>Daggers / Bows</span>
+            <span>Poison / Bleeding</span>
+            <span>Traps</span>
+            <span>Stealth</span>
+          </div>
+          <div className="class-notes">
+            <div>
+              <h3>Group role</h3>
+              <p>
+                Open encounters on favorable terms, disable priority targets, and punish enemies
+                forced through prepared ground.
+              </p>
+            </div>
+            <div>
+              <h3>Character fantasy</h3>
+              <p>
+                Survive through preparation, precision, and nerve. The Rogue does not overpower
+                danger—she makes certain it never receives a fair chance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <figure className="class-study rogue-study">
+          <img
+            src="/art-rogue-poison-arrow.webp"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+            alt="The Rogue releases a poisoned arrow from concealment in a rain-soaked forest as a hidden trap waits on the path below."
+          />
+          <figcaption>
+            <span>Poison Arrow</span>
+            <p>
+              A physical arrow carries a concentrated alchemical poison into its target, dealing
+              immediate damage before the venom takes hold. The Rogue attacks from concealment,
+              then lets preparation, terrain, and Wither damage finish the encounter on her terms.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+
       <section className="world" id="world">
         <div className="world-copy">
           <div className="section-label">Persistent progression without seasons</div>
