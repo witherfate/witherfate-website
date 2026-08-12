@@ -22,14 +22,14 @@ export const metadata: Metadata = {
     url: "https://witherfate.com",
     siteName: "Witherfate",
     type: "website",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Witherfate — The End Is Near" }],
+    images: [{ url: "/og-end-is-near.png", width: 1200, height: 630, alt: "Witherfate — The End Is Near" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Witherfate — The End Is Near",
     description:
       "A world protected from real-world money, seasonal resets, and monetization systems built at the cost of the game.",
-    images: ["/og.png"],
+    images: ["/og-end-is-near.png"],
   },
 };
 
