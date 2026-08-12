@@ -119,7 +119,7 @@ export default function Home() {
         </a>
         <nav aria-label="Primary navigation">
           <a href="#classes">Classes</a>
-          <a href="#monsters">Monsters</a>
+          <a href="#foes">Foes</a>
           <a href="#damage">Damage</a>
           <a href="#philosophy">Philosophy</a>
           <a href="#motivation">Motivation</a>
@@ -880,12 +880,12 @@ export default function Home() {
         </figure>
       </section>
 
-      <section className="monsters-section" id="monsters" aria-labelledby="monsters-title">
+      <section className="monsters-section" id="foes" aria-labelledby="foes-title">
         <div className="monsters-heading">
-          <div className="section-label">Monsters of Witherfate</div>
-          <h2 id="monsters-title">The world does not need to be saved. It needs to be survived.</h2>
+          <div className="section-label">Foes of Witherfate</div>
+          <h2 id="foes-title">The world does not need to be saved. It needs to be survived.</h2>
           <p>
-            Witherfate&apos;s enemies are not interchangeable targets. Each creature belongs to a
+            Witherfate&apos;s foes are not interchangeable targets. Each belongs to a
             place, a history, and a form of corruption—built to be understood through silhouette,
             behavior, and the evidence it leaves behind.
           </p>
@@ -922,6 +922,41 @@ export default function Home() {
               <span>Isolation</span>
               <span>Corruption</span>
               <span>Demonic</span>
+            </div>
+          </div>
+        </div>
+        <div className="monster-feature revenant-feature">
+          <figure className="monster-art revenant-art">
+            <img
+              src="/art-revenant.webp"
+              width="1023"
+              height="1537"
+              loading="lazy"
+              decoding="async"
+              alt="An armored Revenant stands in a flooded crypt, cold corpse-light burning through its exposed ribcage as burial candles relight around it."
+            />
+          </figure>
+          <div className="monster-copy revenant-copy">
+            <div className="section-label">Creature concept · Revenant</div>
+            <h3>The Revenant</h3>
+            <p className="monster-lead">
+              A dead soldier still obeying an order no living commander remembers.
+            </p>
+            <p>
+              Revenants are warriors pulled back into their corpses by corruption and imprisoned
+              inside the armor in which they were buried. Flesh, burial cloth, and corroded plate
+              have fused into a body that no longer heals and refuses to finish dying.
+            </p>
+            <p>
+              Fragments of military discipline remain. A Revenant advances deliberately, guards
+              what it was commanded to protect, and uses the weapon placed in its grave with the
+              mechanical certainty of a ritual repeated long after its meaning was lost.
+            </p>
+            <div className="monster-traits" aria-label="Revenant creature identity">
+              <span>Armored undead</span>
+              <span>Relentless advance</span>
+              <span>Corpse-light</span>
+              <span>Reconstitution</span>
             </div>
           </div>
         </div>

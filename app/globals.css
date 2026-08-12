@@ -593,6 +593,19 @@ blockquote {
   letter-spacing: .08em;
   text-transform: uppercase;
 }
+.revenant-feature {
+  margin-top: clamp(72px, 10vw, 150px);
+  padding-top: clamp(72px, 9vw, 130px);
+  border-top: 1px solid rgba(121, 55, 58, .32);
+}
+.revenant-feature .monster-art { order: 2; }
+.revenant-feature .monster-copy { order: 1; }
+.revenant-art { border-color: rgba(91, 104, 112, .42); }
+.revenant-copy .section-label { color: #9ca9ad; }
+.revenant-copy .monster-traits span {
+  border-color: rgba(92, 108, 116, .48);
+  background: rgba(74, 92, 101, .06);
+}
 
 .content-divider {
   padding: clamp(74px, 9vw, 120px) clamp(24px, 9vw, 150px);
@@ -694,6 +707,8 @@ footer { order: 20; display: flex; justify-content: space-between; gap: 20px; pa
   .game-intro, .industry-heading, .manifesto, .experience, .classes-section, .monster-feature, .world, .economy-section, .audience-section { grid-template-columns: 1fr; }
   .monster-art { margin: 0 auto; }
   .monster-copy { margin: 0 auto; }
+  .revenant-feature .monster-art { order: 1; }
+  .revenant-feature .monster-copy { order: 2; }
   .class-art { margin: 0 auto; }
   .class-copy { max-width: 760px; margin: 0 auto; }
   .sorcerer-copy { order: 2; }
