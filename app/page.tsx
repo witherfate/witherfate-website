@@ -448,6 +448,24 @@ export default function Home() {
             alt="An elderly Sorcerer with iron-gray hair and beard conjures blue-white lightning in a candlelit library, the same charge visible in his eyes."
           />
         </figure>
+        <figure className="class-study sorcerer-study">
+          <img
+            src="/art-sorcerer-frost-nova.webp"
+            width="1537"
+            height="1023"
+            loading="lazy"
+            decoding="async"
+            alt="The Sorcerer casts Frost Nova in a flooded cathedral crypt, flash-freezing black water and trapping surrounding revenants in an expanding ring of ice."
+          />
+          <figcaption>
+            <span>Frost Nova</span>
+            <p>
+              Cold is control made physical. Frost Nova turns the ground around the Sorcerer into
+              a weapon—freezing water, arresting an advance, and creating the moment his companions
+              need to reposition or finish what the spell has trapped.
+            </p>
+          </figcaption>
+        </figure>
       </section>
 
       <section className="world" id="world">

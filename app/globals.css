@@ -391,6 +391,8 @@ blockquote {
   border-color: rgba(108, 128, 148, .48);
   background: rgba(77, 102, 128, .055);
 }
+.sorcerer-study { border-color: rgba(108, 128, 148, .42); }
+.sorcerer-study figcaption span { color: #91a8b9; }
 
 .world { background: #0c0f0f; }
 .world-copy p { max-width: 650px; color: var(--muted); }
