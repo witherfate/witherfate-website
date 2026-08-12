@@ -746,6 +746,95 @@ export default function Home() {
         </figure>
       </section>
 
+      <section className="classes-section crusader-section" aria-labelledby="crusader-title">
+        <figure className="class-art crusader-art">
+          <img
+            src="/art-crusader.webp"
+            width="1024"
+            height="1536"
+            loading="lazy"
+            decoding="async"
+            alt="The Crusader kneels in a war-worn cathedral beside a battered shield and flanged mace, renewing his oath beneath the emblem of a flame within a broken halo."
+          />
+        </figure>
+        <div className="class-copy crusader-copy">
+          <div className="section-label">Classes · Fifth revealed</div>
+          <h2 id="crusader-title">The Crusader</h2>
+          <p className="class-lead">
+            A survivor of a failed holy war who carries protection, judgment, and elemental force
+            into the front line.
+          </p>
+          <p>
+            The Crusader is Witherfate&apos;s heavy-armored melee protector. Shields hold hostile
+            attention while maces, flails, and scepters deliver Physical attacks empowered by Fire.
+            Auras strengthen nearby companions, making his position matter to the entire group.
+          </p>
+          <p>
+            The Church that issued his oath has failed, and the god invoked by its rites remains
+            silent. The power still answers. Whether it is divine, inherited, or something older
+            wearing a sacred face no longer changes the work that must be done.
+          </p>
+          <div className="class-traits crusader-traits" aria-label="Crusader combat identity">
+            <span>Physical / Fire damage</span>
+            <span>Maces / Flails / Scepters</span>
+            <span>Heavy plate / Shields</span>
+            <span>Auras</span>
+            <span>Group protection</span>
+          </div>
+          <div className="class-notes">
+            <div>
+              <h3>Group role</h3>
+              <p>
+                Stand between the group and its most dangerous threats, strengthen nearby allies,
+                and condemn priority enemies for coordinated destruction.
+              </p>
+            </div>
+            <div>
+              <h3>Character fantasy</h3>
+              <p>
+                Carry the weapons, rites, and guilt of a fallen Church into a world that offers no
+                proof salvation was ever real. Hold the oath anyway.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="class-skills crusader-skills" aria-labelledby="crusader-skills-title">
+          <div className="class-skills-heading">
+            <div className="section-label">Revealed skills</div>
+            <h3 id="crusader-skills-title">Crusader skills</h3>
+          </div>
+          <div className="skill-list">
+            <article className="skill-card">
+              <span>Physical · Fire · Melee · Mark</span>
+              <h4>Judgment</h4>
+              <p>
+                Condemn a priority enemy and prepare a crushing sacred strike. The target is marked
+                as Judged, taking increased damage from the Crusader and nearby allies while the
+                verdict remains upon it.
+              </p>
+            </article>
+          </div>
+        </div>
+        <figure className="class-study crusader-study">
+          <img
+            src="/art-crusader-judgment.webp"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+            alt="The Crusader pins a condemned grave knight behind his shield and raises a white-hot mace above the sacred Judgment mark burning beneath the enemy."
+          />
+          <figcaption>
+            <span>Judgment</span>
+            <p>
+              Judgment makes the group&apos;s priority unmistakable. The condemned enemy bears the
+              broken-halo seal while the Crusader prepares the verdict, exposing it to every ally
+              ready to turn a moment of sacred authority into coordinated violence.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+
       <section className="world" id="world">
         <div className="world-copy">
           <div className="section-label">Persistent progression without seasons</div>

@@ -448,6 +448,19 @@ blockquote {
 .berserker-study figcaption span,
 .berserker-skills .skill-card > span { color: #bd725e; }
 .shield-breaker-study { margin-bottom: clamp(16px, 2vw, 28px); }
+.crusader-section {
+  background:
+    radial-gradient(circle at 22% 28%, rgba(176, 139, 77, .105), transparent 31rem),
+    radial-gradient(circle at 80% 68%, rgba(109, 34, 32, .08), transparent 35rem),
+    #0d0c0a;
+}
+.crusader-traits span {
+  border-color: rgba(169, 130, 69, .5);
+  background: rgba(169, 130, 69, .055);
+}
+.crusader-study { border-color: rgba(166, 126, 68, .44); }
+.crusader-study figcaption span,
+.crusader-skills .skill-card > span { color: #c29a5e; }
 
 .world { background: #0c0f0f; }
 .world-copy p { max-width: 650px; color: var(--muted); }
