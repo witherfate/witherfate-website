@@ -413,24 +413,24 @@ export default function Home() {
         </figure>
       </section>
 
-      <section className="classes-section sorcerer-section" aria-labelledby="sorcerer-title">
+      <section className="classes-section sorcerer-section" aria-labelledby="sorceress-title">
         <div className="class-copy sorcerer-copy">
           <div className="section-label">Classes · Second revealed</div>
-          <h2 id="sorcerer-title">The Sorcerer</h2>
+          <h2 id="sorceress-title">The Sorceress</h2>
           <p className="class-lead">
-            A master of elemental power whose discipline is measured by what he can contain.
+            A master of elemental power whose discipline is measured by what she can contain.
           </p>
           <p>
-            The Sorcerer is Witherfate&apos;s dedicated ranged caster. Fire destroys and denies
+            The Sorceress is Witherfate&apos;s dedicated ranged caster. Fire destroys and denies
             ground, Cold slows and controls advancing enemies, and Lightning strikes quickly and
             carries through clustered targets.
           </p>
           <p>
-            Sorcerers inherit the knowledge of an order that helped ruin the civilization it was
+            Sorceresses inherit the knowledge of an order that helped ruin the civilization it was
             sworn to protect. Their magic remains necessary, but never harmless. Every spell asks
             a mortal body to command forces it was not built to survive.
           </p>
-          <div className="class-traits sorcerer-traits" aria-label="Sorcerer combat identity">
+          <div className="class-traits sorcerer-traits" aria-label="Sorceress combat identity">
             <span>Fire / Cold / Lightning damage</span>
             <span>Ranged spellcasting</span>
             <span>Area damage</span>
@@ -456,25 +456,25 @@ export default function Home() {
         </div>
         <figure className="class-art sorcerer-art">
           <img
-            src="/art-sorcerer.webp"
+            src="/art-sorceress.webp"
             width="1023"
             height="1537"
             loading="lazy"
             decoding="async"
-            alt="An elderly Sorcerer with iron-gray hair and beard conjures blue-white lightning in a candlelit library, the same charge visible in his eyes."
+            alt="A young brunette Sorceress conjures blue-white lightning in a candlelit library, its charge reflected in her eyes."
           />
         </figure>
         <div className="class-skills sorcerer-skills" aria-labelledby="sorcerer-skills-title">
           <div className="class-skills-heading">
             <div className="section-label">Revealed skills</div>
-            <h3 id="sorcerer-skills-title">Sorcerer skills</h3>
+            <h3 id="sorcerer-skills-title">Sorceress skills</h3>
           </div>
           <div className="skill-list">
             <article className="skill-card">
               <span>Mobility</span>
               <h4>Teleport</h4>
               <p>
-                Collapse the space at the Sorcerer&apos;s position and reappear instantly at a chosen
+                Collapse the space at the Sorceress&apos;s position and reappear instantly at a chosen
                 destination. Teleport crosses enemies and hazards, but disciplined use is essential
                 when the arrival point may be more dangerous than the place left behind.
               </p>
@@ -483,7 +483,7 @@ export default function Home() {
               <span>Cold · Area · Control</span>
               <h4>Frost Nova</h4>
               <p>
-                Release a ring of violent cold around the Sorcerer, damaging nearby enemies and
+                Release a ring of violent cold around the Sorceress, damaging nearby enemies and
                 freezing the ground to arrest an advance.
               </p>
             </article>
@@ -491,12 +491,12 @@ export default function Home() {
         </div>
         <figure className="class-study sorcerer-study teleport-study">
           <img
-            src="/art-sorcerer-teleport.webp"
+            src="/art-sorceress-teleport.webp"
             width="1536"
             height="1024"
             loading="lazy"
             decoding="async"
-            alt="The Sorcerer arrives through compressed space in a moonlit cathedral as a small collapsing void marks the position he abandoned."
+            alt="The Sorceress materializes beyond a broken cathedral bridge as a subtle oval distortion closes around her and a void marks the origin she abandoned."
           />
           <figcaption>
             <span>Teleport</span>
@@ -509,18 +509,18 @@ export default function Home() {
         </figure>
         <figure className="class-study sorcerer-study">
           <img
-            src="/art-sorcerer-frost-nova.webp"
+            src="/art-sorceress-frost-nova.webp"
             width="1537"
             height="1023"
             loading="lazy"
             decoding="async"
-            alt="The Sorcerer casts Frost Nova in a flooded cathedral crypt, flash-freezing black water and trapping surrounding revenants in an expanding ring of ice."
+            alt="The Sorceress channels Frost Nova through her staff, erupting the cathedral floor into an expanding ring of ice around advancing revenants."
           />
           <figcaption>
             <span>Frost Nova</span>
             <p>
-              Cold is control made physical. Frost Nova turns the ground around the Sorcerer into
-              a weapon—freezing water, arresting an advance, and creating the moment his companions
+              Cold is control made physical. Frost Nova turns the ground around the Sorceress into
+              a weapon—freezing water, arresting an advance, and creating the moment her companions
               need to reposition or finish what the spell has trapped.
             </p>
           </figcaption>
