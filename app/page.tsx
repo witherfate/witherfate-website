@@ -549,6 +549,15 @@ export default function Home() {
                 freezing the ground to arrest an advance.
               </p>
             </article>
+            <article className="skill-card">
+              <span>Cold · Conjuration</span>
+              <h4>Frost Wyrm</h4>
+              <p>
+                Conjure a temporary elemental apparition from the Sorceress&apos;s staff. The Wyrm
+                sweeps across the battlefield in a violent breath of cold, freezing enemies caught
+                in its path before dissolving back into ice and vapor.
+              </p>
+            </article>
           </div>
         </div>
         <figure className="class-study sorcerer-study teleport-study">
@@ -569,7 +578,7 @@ export default function Home() {
             </p>
           </figcaption>
         </figure>
-        <figure className="class-study sorcerer-study">
+        <figure className="class-study sorcerer-study frost-nova-study">
           <img
             src="/art-sorceress-frost-nova.webp"
             width="1537"
@@ -584,6 +593,24 @@ export default function Home() {
               Cold is control made physical. Frost Nova turns the ground around the Sorceress into
               a weapon—freezing water, arresting an advance, and creating the moment her companions
               need to reposition or finish what the spell has trapped.
+            </p>
+          </figcaption>
+        </figure>
+        <figure className="class-study sorcerer-study frost-wyrm-study">
+          <img
+            src="/art-sorceress-frost-wyrm.png"
+            width="603"
+            height="1008"
+            loading="lazy"
+            decoding="async"
+            alt="A serpentine Frost Wyrm forms from jagged ice and blue elemental vapor."
+          />
+          <figcaption>
+            <span>Frost Wyrm</span>
+            <p>
+              The Frost Wyrm is not a living beast or a commanded dead creature. It is cold given
+              predatory form: a brief elemental manifestation shaped by the Sorceress and driven
+              through her staff toward the enemies she intends to freeze.
             </p>
           </figcaption>
         </figure>

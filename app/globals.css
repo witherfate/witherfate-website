@@ -495,7 +495,23 @@ blockquote {
 .sorcerer-study { border-color: rgba(108, 128, 148, .42); }
 .sorcerer-study figcaption span { color: #91a8b9; }
 .sorcerer-skills .skill-card > span { color: #91a8b9; }
+.sorcerer-skills .skill-card:last-child {
+  grid-column: 1 / -1;
+  min-height: auto;
+  padding-left: 0;
+  border-left: 0;
+}
 .teleport-study { margin-bottom: clamp(16px, 2vw, 28px); }
+.frost-nova-study { margin-bottom: clamp(16px, 2vw, 28px); }
+.frost-wyrm-study {
+  background:
+    radial-gradient(circle at 50% 40%, rgba(62, 111, 158, .13), transparent 34rem),
+    #05090d;
+}
+.frost-wyrm-study img {
+  width: min(100%, 603px);
+  margin: 0 auto;
+}
 .rogue-section {
   background:
     radial-gradient(circle at 18% 34%, rgba(69, 105, 58, .12), transparent 31rem),
