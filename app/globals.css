@@ -593,6 +593,24 @@ blockquote {
   letter-spacing: .08em;
   text-transform: uppercase;
 }
+.succubus-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 28px);
+  max-width: 1320px;
+  margin-top: clamp(52px, 7vw, 92px);
+}
+.succubus-gallery figure {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid rgba(121, 55, 58, .45);
+  background: #050506;
+}
+.succubus-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .revenant-feature {
   margin-top: clamp(72px, 10vw, 150px);
   padding-top: clamp(72px, 9vw, 130px);
@@ -752,6 +770,7 @@ footer { order: 20; display: flex; justify-content: space-between; gap: 20px; pa
   .class-notes > div, .class-notes > div + div { padding: 24px 0; border-right: 0; }
   .class-notes > div:first-child { border-bottom: 1px solid var(--line); }
   .class-study figcaption { grid-template-columns: 1fr; gap: 18px; }
+  .succubus-gallery { grid-template-columns: 1fr; }
   .class-skills { grid-template-columns: 1fr; gap: 28px; }
   .classes-overview-art figcaption { align-items: flex-start; flex-direction: column; gap: 8px; }
   .skill-list { grid-template-columns: 1fr; }

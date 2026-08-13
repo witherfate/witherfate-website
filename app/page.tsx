@@ -925,6 +925,28 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="succubus-gallery" aria-label="Succubus concept art">
+          <figure>
+            <img
+              src="/art-succubus-void-magic.jpg"
+              width="1792"
+              height="1024"
+              loading="lazy"
+              decoding="async"
+              alt="The Succubus conjures violet corruption inside a chained subterranean prison."
+            />
+          </figure>
+          <figure>
+            <img
+              src="/art-succubus-blood-magic.jpg"
+              width="1792"
+              height="1024"
+              loading="lazy"
+              decoding="async"
+              alt="The Succubus wields crimson demonic magic in a blood-marked dungeon."
+            />
+          </figure>
+        </div>
         <div className="monster-feature revenant-feature">
           <figure className="monster-art revenant-art">
             <img
