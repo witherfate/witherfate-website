@@ -560,6 +560,24 @@ export default function Home() {
             </article>
           </div>
         </div>
+        <figure className="sorceress-portrait-study">
+          <img
+            src="/art-sorceress-library-portrait.jpg"
+            width="1152"
+            height="1728"
+            loading="lazy"
+            decoding="async"
+            alt="The Sorceress stands with her frost-enchanted staff among arcane instruments and candlelit shelves in a vast library."
+          />
+          <figcaption>
+            <span>Character study · Sorceress</span>
+            <p>
+              Sorceresses are scholars before they are weapons. Years spent among sealed texts,
+              elemental instruments, and the surviving records of their ruined order teach them
+              how to shape forces that would destroy an unprepared body.
+            </p>
+          </figcaption>
+        </figure>
         <figure className="class-study sorcerer-study teleport-study">
           <img
             src="/art-sorceress-teleport.webp"
